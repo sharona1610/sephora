@@ -1,24 +1,33 @@
-# README
+# Sephora Take-home Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Initial Setup
+The website is built on rails version 4.2
+In order to run the website on your local machine, go through the following steps
 
-Things you may want to cover:
+1. Clone the repo to your local machine
+2. Run ```bundle install``` to install all dependencies
+3. RUn ```rails db:create``` and ```rails db:migrate``` to create and migrate the database
+4. Run ```rails db:seed```
+5. Start up the server using ```rails s```
+6. You will need to configure cloudinary with your own details to be able to upload images
 
-* Ruby version
+Open your local server to view the website. If you are an admin you can log in so that you can make changes to the catalogue.
 
-* System dependencies
+Login details for the admin are seeded to the database. They are as follows
 
-* Configuration
+username: 'casey@gmail.com'
+password: 'abcdef123456'
 
-* Database creation
+## Tests
 
-* Database initialization
+Basic tests have been written using rspec.
+Tests can be run using the command
 
-* How to run the test suite
+``bundle exec rspec``
 
-* Services (job queues, cache servers, search engines, etc.)
+## Gems used
 
-* Deployment instructions
-
-* ...
+1. Cloudinary
+2. rspec
+3. bcrypt
+4. Bootstrap-sass
