@@ -1,0 +1,22 @@
+<div class='container'>
+  <nav class="navbar navbar-default">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/products/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="card">
+    <div class="card-img">
+      <%= cl_image_tag(@product.image,
+      :width => 300, :height => 300,
+      :crop => :fill, :gravity => :face, :radius => 'max', :default_image => "avatar.png")
+      %>
+    </div>
+    <h3 class="card-header"><%=@product.name%></h3>
+    <p class="card-text"><%=@product.description%></p>
+    <p class="card-text"><%=@product.brand%></p>
+    <p class="card-text"><%=@product.price%></p>
+  </div>
+  </div

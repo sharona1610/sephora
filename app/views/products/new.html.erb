@@ -1,0 +1,14 @@
+<div class='new'>
+  <% if @session %>
+    <%= bootstrap_form_for :product, url:products_path(:product), html: { method: :post } do |f| %>
+      <%= f.text_field :name, placeholder: 'Name' %>
+      <%= f.text_field :description, placeholder: 'Description' %>
+      <%= f.number_field :price, placeholder: 'Price' %>
+      <%= f.text_field :category, placeholder: 'Category' %>
+      <%= f.text_field :brand, placeholder: 'Brand' %>
+      <%= f.text_field :subcategory, placeholder: 'Sub Category' %>
+      <%= f.file_field :image %>
+      <%= f.submit 'Add' %>
+    <% end %>
+  <% end %>
+</div>

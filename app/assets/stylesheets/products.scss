@@ -1,0 +1,26 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.new{
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card{
+  text-align: center;
+  margin: 2%;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn{
+  color: white;
+}
+nav{
+ width: 100%;
+ position: absolute;
+ top: 0;
+ margin-top: 0px;
+}
